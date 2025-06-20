@@ -8,7 +8,7 @@ st.markdown(Effortlessly generate optimized prompts for leading AI models.)
 user_objective = st.text_input(Enter your objective, Write an engaging marketing email)
 
 ai_model = st.selectbox(
-    🤖 Choose your AI Model, [ChatGPT, Claude, Gemini, Mistral, GPT-NeoX]
+    Choose your AI Model, [ChatGPT, Claude, Gemini, Mistral, GPT-NeoX]
 )
 
 subscription_tier = st.radio(Choose Subscription Tier, [Free, Pro])
