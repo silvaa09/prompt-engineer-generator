@@ -26,7 +26,8 @@ if st.button(Generate Optimized Prompt)
 
 st.markdown(---)
 st.subheader(Upgrade to Pro)
-st.markdown(Enjoy unlimited prompts and advanced templates by upgrading to Pro for only $9.99month.)
+st.markdown("Enjoy unlimited prompts and advanced templates by upgrading to Pro for only $9.99/month.")
+
 
 st.markdown(
 iframe src=httpsbuy.stripe.comtest_your_stripe_link_here
