@@ -5,7 +5,25 @@ st.set_page_config(page_title="Prompt Engineer Generator", layout="centered")
 st.title("🚀 Prompt Engineer Generator")
 st.markdown("Effortlessly generate optimized prompts for leading AI models.")
 
-user_objective = st.text_input("🎯 Enter your objective:", value="Write an engaging marketing email")
+example_prompts = [
+    "Write an engaging email",
+    "Generate compelling social media content",
+    "Create a detailed blog post outline",
+    "Craft persuasive ad copy",
+    "Develop customer support chatbot scripts",
+    "Write informative product descriptions",
+    "Generate engaging YouTube video scripts",
+    "Formulate personalized cold outreach messages",
+    "Draft an SEO-optimized webpage content",
+    "Produce creative storytelling prompts"
+]
+
+selected_prompt = st.selectbox("💡 Choose a sample prompt or enter your own below:", ["Custom prompt"] + example_prompts)
+
+if selected_prompt == "Custom prompt":
+    user_objective = st.text_input("🎯 Enter your objective:", value="Write an engaging marketing email")
+else:
+    user_objective = st.text_input("🎯 Enter your objective:", value=selected_prompt)
 
 ai_model = st.selectbox(
     label="🤖 Choose your AI Model:", 
