@@ -2,7 +2,8 @@ import streamlit as st
 
 st.set_page_config(page_title=Prompt Engineer Generator, layout=centered)
 
-st.title(Prompt Engineer Generator)
+st.set_page_config(page_title="Prompt Engineer Generator", layout="centered")
+
 st.markdown(Effortlessly generate optimized prompts for leading AI models.)
 
 user_objective = st.text_input(Enter your objective, Write an engaging marketing email)
